@@ -1,0 +1,130 @@
+h1 {
+  font-family: "Indivisible", Icons;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Indivisible", Icons;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  cursor: default;
+  margin: 0;
+  margin-left: 3.1em;
+  margin-right: 3.1em;
+}
+
+h2:hover {
+  color: #4dbd95;
+}
+
+h3 {
+  font-family: "Indivisible", Icons;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: .2em;
+  width: fit-content;
+}
+
+h3:hover {
+  color: #4dbd95;
+}
+
+.name {
+  color: #4dbd95;
+}
+
+.container {
+  top: 0;
+  left: 50%;
+}
+
+.top-block {
+  height: 45vh;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: horizontal;
+  width: 100vw;
+  justify-content: center;
+}
+
+.menu-item-container {
+  transform: translate(6.3em, 0);
+  transition: 300ms ease all;
+  padding-top: 0.5em;
+  width: fit-content;
+  height: 0;
+  opacity: 0;
+  display: block;
+}
+
+.title-container:hover {
+  color: #4dbd95;
+}
+
+@media (orientation: portrait) {
+  h1 {
+    font-family: "Indivisible", Icons;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 700;
+    cursor: default;
+    text-align: center;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: "Indivisible", Icons;
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 500;
+    cursor: default;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin: 0;
+    text-align: center;
+  }
+
+  h3 {
+    font-family: "Indivisible", Icons;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 1vw;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .top-block {
+    height: 30vh;
+  }
+
+  .menu-item-container {
+    transform: translate(0, 0);
+    padding-top: 1vw;
+    height: auto;
+    opacity: 1;
+    display: none;
+    width: 100vw;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 10vw;
+  }
+}

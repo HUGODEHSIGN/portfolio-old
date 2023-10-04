@@ -1,0 +1,142 @@
+h4 {
+  font-family: "Indivisible", Icons;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 500;
+    cursor: default;
+    margin: 0;
+    color: black;
+}
+
+p {
+  font-family: "Indivisible", Icons;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 500;
+    cursor: default;
+    color: black;
+}
+/* image styling below */
+
+img {
+  width: 37vw;
+  border-radius: 2vw;
+  background-color: white;
+  margin-top: 2vw;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+  transition: 300ms ease all;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #4dbd95;
+  border-radius: 4vw;
+  overflow: hidden;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+#sub-thumbnail-container {
+  background-color: black;
+}
+
+/* image description styling*/
+
+.img-container {
+  position: relative;
+  width: 37vw;
+  z-index: 1;
+}
+
+.text-container {
+  position: absolute;
+  top: 2vw;
+  padding: 2vw;
+  z-index: 1;
+  transition: 600ms ease all;
+  opacity: 0;
+}
+
+.expand-rectangle {
+  position: absolute;
+  border-radius: 2vw;
+  width: 99.8%;
+  height: 93.6%;
+  transform: scale(1,1);
+  transition: 500ms ease all;
+  background-color: white;
+  z-index: -1;
+}
+
+#rsa-expand-rectangle {
+  top: 2vw;
+  left: 0vw;
+}
+
+#foc-expand-rectangle {
+  top: 2vw;
+  left: 39vw;
+}
+
+#mindle-expand-rectangle {
+  top: 41.5vw;
+  left: 0vw;
+}
+
+#glyphs-expand-rectangle {
+  top: 41.5vw;
+  left: 39vw;
+}
+
+#soft-expand-rectangle {
+  top: 80.6vw;
+  left: 0vw;
+}
+
+#plat-expand-rectangle {
+  top: 80.6vw;
+  left: 39vw;
+}
+
+/* for bottom 3d projects */
+#sub-thumbnail-container {
+  margin-top: 2vw;
+  margin-bottom: 8vw;
+}
+
+#duck-expand-rectangle {
+  top: 2vw;
+  left: 0vw;
+}
+
+#clip-expand-rectangle {
+  top: 2vw;
+  left: 39vw;
+}
+
+@media (orientation: portrait) {
+  .img-container {
+    position: relative;
+    width: 76vw;
+    z-index: 1;
+  }
+
+  img {
+    width: 76vw;
+    border-radius: 2vw;
+    background-color: white;
+    margin-top: 2vw;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+    transition: 300ms ease all;
+  }
+
+  .expand-rectangle {
+    display: none;
+  }
+}

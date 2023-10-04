@@ -1,0 +1,178 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+  color: #4dbd95;
+}
+
+h1 {
+    font-family: "Indivisible", Icons;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 9.7vw;
+    margin-top: 5vw; 
+    transition: 300ms ease all;
+  }
+  
+  h2 {
+    font-family: "Indivisible", Icons;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    cursor: default;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    transition: 200ms ease all;
+    width: fit-content;
+  }
+  
+  h2:hover {
+    color: #4dbd95;
+  }
+  
+  h3 {
+    font-family: "Indivisible", Icons;
+    font-size: .8vw;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+    color: white;
+    transition: 200ms ease all;
+  }
+  
+  h3:hover {
+    color: #4dbd95;
+  }
+
+
+  
+  .name {
+    color: #4dbd95;
+  }
+
+  .title-container:hover {
+    color: #4dbd95;
+  }
+
+/* above is text styling */
+
+
+
+.header-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.menu-container {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 4.5vw;
+    margin-right: 3vw;
+
+    width: 50vw;
+
+    text-align: center;
+    height: fit-content;
+}
+
+.menu-item-container {
+  transform: translate(3vw, 0);
+  transition: 300ms ease all;
+  padding-top: 0vw;
+  width: fit-content;
+  display: none;
+}
+
+/* backdrop */
+.back-drop {
+  position: fixed;
+  width: 100vw;
+  height: 110%;
+  background-color: black;
+  left: 0;
+  top: 2vw;
+  z-index: 1;
+  transform: translate(100vw,0);
+  border-radius: 4vw;
+  transition: 300ms ease all;
+}
+
+/* hamburger menu*/
+
+.hamburger-container {
+  display: none
+}
+
+ @media (orientation: portrait) {
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+    text-align: left;
+    color: white;
+  }
+
+  h3 {
+    font-size: 2vw;
+    color: white;
+  }
+
+  .menu-item-container {
+    transition: 300ms ease all;
+    transform: translate(3.2vw, 0);
+    padding-top: 0vw;
+    width: fit-content;
+    display: block;
+  }
+
+  .title-contaner {
+    width: fit-content;
+  }
+
+  .header-container {
+    margin-top: 2vw;
+  }
+
+  .hamburger {
+    height: .6vw;
+    width: 3vw;
+    margin: .5vw;
+    background-color: black;
+    border-radius: 1vw;
+    transition: 300ms ease all;
+  }
+
+  .hamburger-container {
+    display: block;
+    width: fit-content;
+    position: absolute;
+    right: 8.5vw;
+    top: 6vw;
+    border: .3vw solid black;
+    border-radius: 1vw;
+    transition: 300ms ease all;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 12vw;
+    display: none;
+    transform: translate(-59vw, 0);
+  }
+}
