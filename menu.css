@@ -165,6 +165,7 @@ h1 {
     border: .3vw solid black;
     border-radius: 1vw;
     transition: 300ms ease all;
+    cursor: pointer;
   }
 
   .menu-container {

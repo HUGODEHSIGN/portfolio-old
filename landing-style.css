@@ -38,6 +38,12 @@ h3:hover {
   color: #4dbd95;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 .name {
   color: #4dbd95;
 }
@@ -66,6 +72,10 @@ h3:hover {
   height: 0;
   opacity: 0;
   display: block;
+}
+
+.title-container {
+  cursor: pointer;
 }
 
 .title-container:hover {

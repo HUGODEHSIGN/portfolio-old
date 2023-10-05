@@ -8,26 +8,34 @@
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="https://use.typekit.net/bit3zpl.css" />
     <link rel="stylesheet" href="../menu.css" />
-    <link rel="stylesheet" href="../home-style.css" />
+    <link rel="stylesheet" href="./content.css" />
   </head>
   <body>
     <div class="container">
       <!--below is menu bar-->
       <div class="header-container">
-        <div class="title-container">
-          <h1>
-            <span class="name">HUGO</span> DE<span class="name">HSI</span>GN
-          </h1>
+        <a href="../home.html">
+          <div class="title-container">
+            <h1>
+              <span class="name">HUGO</span> DE<span class="name">HSI</span>GN
+            </h1>
+          </div>
+        </a>
+
+        <div class="hamburger-container" id="hamburger-container">
+          <div class="hamburger hamburger-one"></div>
+          <div class="hamburger hamburger-two"></div>
+          <div class="hamburger hamburger-three"></div>
         </div>
 
         <div class="menu-container" id="menu-container">
           <div id="work-container">
             <h2>Work</h2>
             <div class="menu-item-container" id="work-item-container">
+              <a href="./rsa.html"><h3>RSA Booth</h3></a>
+              <a href="./foc.html"><h3>Freedom of Control</h3></a>
               <a href="./mindle.html"><h3>The Mindle</h3></a>
               <a href="./glyphs.html"><h3>Glyphs</h3></a>
-              <a href="./foc.html"><h3>Freedom of Control</h3></a>
-              <a href="./rsa.html"><h3>RSA Booth</h3></a>
               <a href="./soft.html"><h3>Soft Textures</h3></a>
               <a href="./plat.html"><h3>Platonic Shapes</h3></a>
               <a href="./duck.html"><h3>ODUCKO Animation</h3></a>
@@ -38,42 +46,53 @@
           <div id="contact-container">
             <h2>Contact</h2>
             <div class="menu-item-container" id="contact-item-container">
-              <h3>hhsi@hugodehsign.com</h3>
-              <h3>1(669) 238 - 6417</h3>
-              <h3>https://www.linkedin.com/</h3>
+              <h3 onclick="copyEmail()">hhsi@hugodehsign.com</h3>
+              <h3 onclick="copyPhone()">1(669) 238 - 6417</h3>
+              <a href="https://www.linkedin.com/in/hugo-hsi/" target="_blank"><h3>LinkedIn</h3></a>
             </div>
           </div>
 
           <div id="resume-container">
             <h2>Resume</h2>
             <div class="menu-item-container" id="resume-item-container">
-              <h3>Download</h3>
+              <a href="../Assets/resume/Hugo-Resume.pdf" download><h3>Download</h3></a>
             </div>
           </div>
-
-          <div id="resume-item-container">
-            <h2>About</h2>
-          </div>
+          <a href="./about.html"><h2>About</h2></a>
         </div>
       </div>
       <div class="back-drop" id="back-drop"></div>
 
       <div class="content-container">
         <div class="content-text">
+          <div class="content-title-container">
+            <h1 class="content-title">Pantone Textures</h1>
+          </div>
           <p>
-            Drawing inspiration from Pantone's iconic color swatches, our
-            project showcases a collection of soft textures. Our design
-            philosophy is rooted in a deep appreciation for the precision and
-            emotional resonance of color. Pantone, renowned for its meticulous
-            color matching system, serves as our guiding muse, infusing our
-            textures with authenticity and subtlety. We've meticulously crafted
-            each texture to harmonize seamlessly with Pantone's timeless colors,
-            creating an immersive visual experience that invites users to
-            explore the interplay of color and texture on a profound level.
+            Presenting a curated selection of soft-textured visuals, artfully
+            inspired by Pantone color swatches. Each interactive animation
+            thoughtfully emulates the graceful motion of delicate paper cards.
+            The website's backend is seamlessly powered by Airtable,
+            strategically organized to optimize data retrieval via its robust
+            API.
           </p>
         </div>
+        <img src="../Assets/soft/pantone-home-page.gif" />
+        <img src="../Assets/soft/pantone-subpage.gif" />
+        <img
+          src="../Assets/soft/pantone-image-view.gif"
+          style="margin-bottom: 2vw"
+        />
       </div>
+      <a href="https://hugohsi.github.io/elastic_collections/index.html" target="_blank"
+        ><button class="cta">View Collection</button></a
+      >
     </div>
+    <script>
+      let portrait = window.matchMedia("(orientation: portrait)");
+      let portraitMatch = window.matchMedia("(orientation: portrait)").matches;
+    </script>
     <script src="../menu.js"></script>
+    <script src="../copy-text.js "></script>
   </body>
 </html>

@@ -8,26 +8,34 @@
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="https://use.typekit.net/bit3zpl.css" />
     <link rel="stylesheet" href="../menu.css" />
-    <link rel="stylesheet" href="../home-style.css" />
+    <link rel="stylesheet" href="./content.css" />
   </head>
   <body>
     <div class="container">
       <!--below is menu bar-->
       <div class="header-container">
+        <a href="../home.html">
         <div class="title-container">
           <h1>
             <span class="name">HUGO</span> DE<span class="name">HSI</span>GN
           </h1>
+        </div>
+      </a>
+
+        <div class="hamburger-container" id="hamburger-container">
+          <div class="hamburger hamburger-one"></div>
+          <div class="hamburger hamburger-two"></div>
+          <div class="hamburger hamburger-three"></div>
         </div>
 
         <div class="menu-container" id="menu-container">
           <div id="work-container">
             <h2>Work</h2>
             <div class="menu-item-container" id="work-item-container">
+              <a href="./rsa.html"><h3>RSA Booth</h3></a>
+              <a href="./foc.html"><h3>Freedom of Control</h3></a>
               <a href="./mindle.html"><h3>The Mindle</h3></a>
               <a href="./glyphs.html"><h3>Glyphs</h3></a>
-              <a href="./foc.html"><h3>Freedom of Control</h3></a>
-              <a href="./rsa.html"><h3>RSA Booth</h3></a>
               <a href="./soft.html"><h3>Soft Textures</h3></a>
               <a href="./plat.html"><h3>Platonic Shapes</h3></a>
               <a href="./duck.html"><h3>ODUCKO Animation</h3></a>
@@ -38,47 +46,48 @@
           <div id="contact-container">
             <h2>Contact</h2>
             <div class="menu-item-container" id="contact-item-container">
-              <h3>hhsi@hugodehsign.com</h3>
-              <h3>1(669) 238 - 6417</h3>
-              <h3>https://www.linkedin.com/</h3>
+              <h3 onclick="copyEmail()">hhsi@hugodehsign.com</h3>
+                <h3 onclick="copyPhone()">1(669) 238 - 6417</h3>
+                <a href="https://www.linkedin.com/in/hugo-hsi/" target="_blank"><h3>LinkedIn</h3></a>
             </div>
           </div>
 
           <div id="resume-container">
             <h2>Resume</h2>
             <div class="menu-item-container" id="resume-item-container">
-              <h3>Download</h3>
+              <a href="../Assets/resume/Hugo-Resume.pdf" download><h3>Download</h3></a>
             </div>
           </div>
-
-          <div id="resume-item-container">
-            <h2>About</h2>
-          </div>
+          <a href="./about.html"><h2>About</h2></a>
         </div>
       </div>
       <div class="back-drop" id="back-drop"></div>
 
       <div class="content-container">
         <div class="content-text">
-          <p>
-            Drawing inspiration from the card game 'The Mind,' our Wordle clone
-            introduces a unique twist to the beloved word puzzle genre. Our
-            platform offers a seamless user experience, featuring both an
-            intuitive onscreen keyboard and support for physical keyboard
-            inputs. Players engage in word-guessing challenges by deciphering
-            clues provided by the game regarding the placement of letters within
-            the word. What sets us apart is our utilization of dynamic APIs
-            instead of a static word list. This means that every time the
-            website is loaded, a brand-new game is generated, complete with
-            fresh words and unique hints. Progression is a key element of our
-            game design. As players advance through rounds, they earn additional
-            lives and hints, all while facing escalating challenges through the
-            lengthening of the mystery word. Dive into a world of endless word
-            puzzles that evolve with your skills and wit.
-          </p>
+          <div class="content-title-container">
+          <h1 class="content-title">
+            The Mindle
+          </h1>
         </div>
+          <p>Inspired by 'The Mind' card game, our Wordle clone offers a unique
+            twist on word puzzles. Players guess words based on in-game clues.
+            Unlike the static word list Wordle uses, this game uses dynamic APIs to generate
+            entirely new games with fresh words and hints upon each site
+            reload. Progression includes more lives, hints, and longer words
+            for added challenge.</p>
+        </div>
+        <img src="../Assets/mindle/mindle-color-gif.gif">
+        <img src="../Assets/mindle/mindle-hints-gif.gif">
+        <img src="../Assets/mindle/mindle-keyboard-gif.gif" style="margin-bottom: 2vw">
       </div>
-    </div>
+      <a href="https://hugohsi.github.io/TheMindle/" target="_blank"><button class="cta">Try Game</button></a>
+      </div>
+    <script>
+      let portrait = window.matchMedia("(orientation: portrait)");
+      let portraitMatch = window.matchMedia("(orientation: portrait)").matches;
+    </script>
     <script src="../menu.js"></script>
+    <script src="../copy-text.js"></script>
   </body>
 </html>

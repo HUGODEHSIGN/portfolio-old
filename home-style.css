@@ -6,6 +6,7 @@ h4 {
     cursor: default;
     margin: 0;
     color: black;
+    cursor: pointer;
 }
 
 p {
@@ -15,6 +16,7 @@ p {
     font-weight: 500;
     cursor: default;
     color: black;
+    cursor: pointer;
 }
 /* image styling below */
 
@@ -59,6 +61,7 @@ img {
   z-index: 1;
   transition: 600ms ease all;
   opacity: 0;
+  cursor: pointer;
 }
 
 .expand-rectangle {
@@ -111,11 +114,15 @@ img {
 #duck-expand-rectangle {
   top: 2vw;
   left: 0vw;
+  width: 99.8%;
+  height: 90%;
 }
 
 #clip-expand-rectangle {
   top: 2vw;
   left: 39vw;
+  width: 99.8%;
+  height: 90%;
 }
 
 @media (orientation: portrait) {

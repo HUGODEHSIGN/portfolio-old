@@ -149,4 +149,31 @@ hamburgerIcon.addEventListener('click', () => {
     }
 })
 
+hamburgerIcon.addEventListener('mouseover', () => {
+  for (var i = 0; i < hamburgers.length; i++) {
+    var hamburger = hamburgers[i];
+   hamburger.style.backgroundColor = '#4dbd95';
+}
 
+hamburgerIcon.style.border = 'solid #4dbd95'
+
+})
+
+hamburgerIcon.addEventListener('mouseout', () => {
+  if (backDropShow) {
+    for (var i = 0; i < hamburgers.length; i++) {
+      var hamburger = hamburgers[i];
+     hamburger.style.backgroundColor = 'white';
+  }
+  hamburgerIcon.style.border = 'solid white'
+  } else {
+
+    for (var i = 0; i < hamburgers.length; i++) {
+      var hamburger = hamburgers[i];
+     hamburger.style.backgroundColor = 'black';
+  }
+  hamburgerIcon.style.border = 'solid black'
+
+  }
+
+})

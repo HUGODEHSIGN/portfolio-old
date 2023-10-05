@@ -1,29 +1,32 @@
+a {
+  cursor: pointer;
+}
+
 .content-container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #4dbd95;
-    border-radius: 4vw;
-    overflow: hidden;
-    width: 80vw;
-    margin-left: 10vw;
-    z-index: -1;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  border-radius: 4vw;
+  overflow: hidden;
+  width: 80vw;
+  margin-left: 10vw;
+  z-index: -1;
 }
 
 .thumbnail-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #4dbd95;
-    border-radius: 4vw;
-    overflow: hidden;
-    width: 80vw;
-    margin-left: 10vw;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 4vw;
+  overflow: hidden;
+  width: 80vw;
+  margin-left: 10vw;
+}
 
-  img {
-    width: 76vw;
+img {
+  width: 76vw;
   border-radius: 2vw;
   background-color: white;
   margin-top: 2vw;
@@ -32,33 +35,68 @@
   z-index: 1;
   transition: 300ms ease all;
   margin-left: 2vw;
-  }
+}
 
-  .content-title-container {
-    text-align: left;
-    margin: 0;
-    margin-top: 2vw;
-    color: white;
-    
-  }
+.content-title-container {
+  text-align: left;
+  margin: 0;
+  margin-top: 2vw;
+  color: white;
+}
 
-  .content-title {
-    margin: 0;
-  }
+.content-title {
+  margin: 0;
+}
 
-  p {
-    font-family: "Indivisible", Icons;
-      font-size: 2vw;
-      font-style: normal;
-      font-weight: 500;
-      cursor: default;
-      color: white;
-      margin: 0;
-      margin-top: 2vw;
-  }
+p {
+  font-family: "Indivisible", Icons;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  cursor: default;
+  color: white;
+  margin: 0;
+  margin-top: 2vw;
+}
 
-  .content-text {
-    padding: 2vw;
-    padding-bottom: 0;
-    margin: 0;
-  }
+.content-text {
+  padding: 2vw;
+  padding-left: 2.5vw;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.cta {
+  font-family: "Indivisible", Icons;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 500;
+  cursor: default;
+
+  width: fit-content;
+  margin-left: 10vw;
+  margin-top: 1.8vw;
+  background-color: black;
+  color: white;
+  padding: 2vw;
+  padding-bottom: 1.8vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  border-radius: 4vw;
+  border: none;
+  text-align: center;
+  transition: 300ms ease all;
+  cursor: pointer;
+  border: 3px solid black;
+  margin-bottom: 4vw;
+}
+
+.cta:hover {
+  background-color: white;
+  color: black;
+}
+
+.bio-container {
+  width: 30vw;
+}
+
